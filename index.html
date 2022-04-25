@@ -5,9 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
-    <link href="./assets/css/script.css">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
+    <div id="timerDiv">
+        Time:<span id="timer"></span>
+    </div>
+
+    <div id="startScreen">
+        <h2>Coding Quiz!</h2>
+        <p>Push the start button and take the quiz! This is a timed quiz to test you on your knowledge of everything web-development!</p>
+        <p>Good Luck!</p>
+        <button id="startBtn">Start</button>
+    </div>
+
+    
+    <div class="hide" id="questions">
+        <h2 id="question-title">here is questions</h2>
+        <div id="choices"></div>
+    </div>
+
+    <div class="hide" id="endScreen">
+        <h2>Congratulations!</h2>
+        <p>Your final score is: <span id="finalScore"></span></p>
+        <p>Enter your initials and save your score!</p>
+        <input type="text" id="initials" />
+        <button id="saveBtn">Save Score</button>
+    </div>
+
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
