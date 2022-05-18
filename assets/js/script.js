@@ -34,22 +34,22 @@ const questions = [
     {
         title: "What tag is required in all HTML documents, and is used to define the title?",
         choices: ["<br></br>", "<body></body>", "<td>", "<head></head>"],
-        answer: "D"
+        answer: "<head></head>"
     },
     {
         title: "What tag is used to define the bottom section (footer) of an HTML document?",
         choices: ["<button>", "<td>", "<h1> to <h6>", "<footer>"],
-        answer: "D"
+        answer: "<footer>"
     },
     {
         title: "which of the headings is the largest",
         choices: ["h3", "h4", "h0", "h1"],
-        answer: "D"
+        answer: "h1"
     },
     {
         title: "which tag would bold the text",
         choices: ["em", "p", "abbr", "strong"],
-        answer: "D"
+        answer: "strong"
     },
 ]
 
@@ -67,7 +67,7 @@ function showQuestions() {
 
         var choiceBtn = document.createElement("button");
         choiceBtn.setAttribute("value", choice);
-        choiceBtn.setAttribute("class", "choice");
+        choiceBtn.setAttribute("class", "choice btn-primary btn-lg");
 
         choiceBtn.textContent = choice;
 
